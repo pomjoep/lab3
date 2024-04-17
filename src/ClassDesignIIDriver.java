@@ -14,23 +14,24 @@ import java.awt.Dimension;
  * 
  */
 
+//3.6) when data can be accessed when it shouldnt due to reference being passed
+//     no, they are primitive types being passed
+//     im not sure
 
 public class ClassDesignIIDriver {
     private int foo = -1;  //used in one of the mutator functions below
     
     
     public static void main(String[] args) {
-        //uncomment the desired Driver or Demo below and run this code to test your progress
-        //shapeDriver();
-        //lineSegmentDriver();
-        //immutableFractionDriver();        
+        shapeDriver();
+        lineSegmentDriver();
+        immutableFractionDriver();
         //customMathDriver();
         //passByReferenceDemo();
     }
 
     private static void shapeDriver() {
         System.out.println("uncomment the code to use the shapeDriver");
-        /*
         Shape a = new Shape();
         Shape b = new Shape(10, 10, Color.DARK_GRAY);
         
@@ -39,12 +40,10 @@ public class ClassDesignIIDriver {
         
         System.out.println("a: " + a);
         System.out.println("b: " + b);
-        */
     }
     
     public static void lineSegmentDriver() {
-        System.out.println("uncomment the code to use the lineSegmentDriver");
-        /*LineSegment a = new LineSegment();
+        LineSegment a = new LineSegment();
         LineSegment b = new LineSegment(new Point2D(1,1), new Point2D(2,2));
         LineSegment c = new LineSegment(b);
         
@@ -60,13 +59,12 @@ public class ClassDesignIIDriver {
         System.out.println("Does a equal b? " + a.equals(b));
         System.out.println("Does a equal c? " + a.equals(c));
         System.out.println("Does b equal c? " + b.equals(c));
-        */
+
     }
     
     
     public static void immutableFractionDriver() {
-        System.out.println("Uncomment the code to use the immutableFractionDriver");
-        /*Fraction a = new Fraction(1, 2);
+        Fraction a = new Fraction(1, 2);
         Fraction b = new Fraction(3, 4);
         Fraction c = new Fraction(b);
     
@@ -75,8 +73,8 @@ public class ClassDesignIIDriver {
         System.out.println("c: " + c);
         
         // fix the following 2 errors
-        System.out.println("a.num:" + a.getNum());
-        System.out.println("b.denom:" + b.getDenom());
+        System.out.println("a.num: " + a.getNum());
+        System.out.println("b.denom :" + b.getDenom());
         
         
         // which of the following code is correct to change the fraction a?
@@ -89,7 +87,7 @@ public class ClassDesignIIDriver {
         
         System.out.println("a.equals(b): " + a.equals(b));
         System.out.println("b.equals(c): " + b.equals(c));
-        */
+
         
     }
 

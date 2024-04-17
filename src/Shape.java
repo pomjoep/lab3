@@ -1,9 +1,9 @@
 package src;
 
-import java.awt.Color;
+import java.awt.*;
 import java.util.Scanner;
 
-public abstract class Shape {
+public class Shape {
     protected int x = 0;
     protected int y = 0;
     protected Color color = Color.WHITE;
@@ -19,6 +19,19 @@ public abstract class Shape {
         x = anotherShape.x;
         y = anotherShape.y;
         color = anotherShape.color;
+    }
+
+    //for inheritors to use
+    public double getArea(){
+        return -1;
+    }
+
+    @Override
+    public String toString(){
+        return "Shape (" + x + ", " + y + ") " + color;
+    }
+
+    public void draw(Graphics g){
     }
 
     //x y checking
@@ -41,4 +54,17 @@ public abstract class Shape {
         }
     }
 
+    //getters/setters
+    public int getX() {
+        return x;
+    }
+    public void setX(int x) {
+        this.x = x;
+    }
+    public int getY() {
+        return y;
+    }
+    public void setY(int y) {
+        this.y = y;
+    }
 }
