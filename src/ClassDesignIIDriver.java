@@ -26,7 +26,7 @@ public class ClassDesignIIDriver {
         shapeDriver();
         lineSegmentDriver();
         immutableFractionDriver();
-        //customMathDriver();
+        customMathDriver();
         //passByReferenceDemo();
     }
 
@@ -92,8 +92,6 @@ public class ClassDesignIIDriver {
     }
 
     private static void customMathDriver() {
-        System.out.println("uncomment the code to use the customMathDriver");
-        /*
         double a = CustomMath.PI;
         double b = CustomMath.E;
         double c = a + b;
@@ -101,7 +99,6 @@ public class ClassDesignIIDriver {
         System.out.println("The larger of the two is " + CustomMath.max(10, 20));
         System.out.println("And the larger of the two is " + CustomMath.max(10.34, 10.31));
         System.out.println("2^8 is " + CustomMath.pow(2, 8));
-        */
     }
     
     public static void passByReferenceDemo() {
