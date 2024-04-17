@@ -26,6 +26,7 @@ public class Fraction {
         for(int i = newDen; i > 0; i--){
             if(newNum % i == 0 && newDen % i == 0){
                 devBy = i;
+                break;
             }
         }
         newNum /= devBy;
